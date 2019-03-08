@@ -1,0 +1,87 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background: #457585;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+button {
+    width: 17.5rem;
+    height: 3.1rem;
+    font-size: 1.8rem;
+    border-radius: 0.6rem;
+    border: 0.2rem solid #550D00;
+    background: #ffe6aa;
+    color: rgba(85, 13, 0, 0.60);
+    margin: 0 1.5rem;
+}
+
+.App {
+    display: flex;
+    margin: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.todo-div {
+    padding-bottom: 1.6rem;
+    margin: 1rem;
+    font-size: 4rem;
+    color: #D4B56A;
+    animation: fadeIn 1.25s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+}
+@keyframes fadeIn {
+    from {
+        transform: scale(0.33) translate(250px, 100%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translate(0,0);
+        opacity: 1;
+    }
+}
+
+.bullet-div {
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    font-size: 3.3rem;
+}
+.bullet-div:hover {
+    animation: rotate360 .6s ease-in;
+}
+
+@keyframes rotate360 {
+    from {
+        opacity: 0;
+        transform: rotate(0);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+.input {
+    width: 15rem;
+    height: 2.5rem;   
+    font-size: 1.8rem;
+    border-radius: 0.7rem;
+    margin-right: 1.5rem;
+    padding-left: 1.25rem;
+    background: #ffe6aa;
+    border-color: #550D00;
+}
+.input::placeholder {
+    color: rgba(85, 13, 0, 0.60);
+    padding-left: 0.5rem;
+}
+
+.todolist-div {
+    margin-top: 2.5rem;
+}
+
+/* #802615 #550D00 #FFE6AA #D4B56A #FFE6AA */
